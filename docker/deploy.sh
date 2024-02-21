@@ -3,6 +3,8 @@
 BASEDIR=$(dirname "$0")
 PROJECT_DIR="$(realpath "${BASEDIR}")"
 
+cd $PROJECT_DIR || exit
+
 IMAGE_NAME="nginx-unity"
 
 GIT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
